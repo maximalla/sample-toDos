@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<header class="header">
+  <h1>TODO list</h1> 
+</header>
+
+
+
+<main class="main">
+  <form class="form" id="todoForm"><!----> 
+    <input type="text" placeholder="what you need to do?" id="todoInput" autocomplete="off">
+    <button type="submit" id="saveBtn">save</button><!---->
+		
+		<select name="tasks" id="taskSelect">
+			<option value="all">All</option>
+			<option value="active">Active</option>
+			<option value="completed">Completed</option>
+			<option value="deleted">Deleted</option>
+	</select>
+	<div class="sort">
+		<label>Sort:</label><input type="checkbox" id="sort" class="sort" />
+	</div>
+	</form>
+	
+	<div class="error" id="error"></div><!---->
+	<div class="zerotasks" id="zeroTasks"></div>
+  <section class="todo-list" id="todoList"></section>
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>

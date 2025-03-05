@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(7,11,108);
+    background: linear-gradient(90deg, rgba(7,11,108,1) 0%, rgba(177,170,78,1) 44%, rgba(216,0,255,1) 100%);
+    font-family: monospace;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.header h1 {
+    color: #fff;
+    text-shadow: 0 0 12px #000;
+    font-size: 48px;
+}
+
+.error{
+	width: 80%;
+	margin: 20px 0 0 auto;
+	font-size: 18px;
+	mix-blend-mode: overlay;
+	color: red;
+}
+.zerotasks{
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	font-size: 30px;
+	mix-blend-mode: overlay;
+}
+
+.form {
+    width: 80%;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.form > input {
+    flex-grow: 1;
+    margin-right: 7px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.form > button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+.form > select{
+	border-radius: 5px;
+	margin-left: 10px;
+	text-align: center;
+	background-color: orange;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.todo {
+    width: 80%;
+    min-width: 300px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.todo > .text {
+    margin-right: auto;
+    color: #3a3636;
+}
+
+.editInput {
+	flex-grow: 1;
+	background: transparent;
+	outline: none;
+	border: none;
+}
+
+.todo > input[type=checkbox] {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.todo > button {
+    border: none;
+		border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit{
+	background: transparent;
+	margin-right: 10px;
+	padding: 7.3px;
+	background-image: url("./edit.png");
+	background-repeat: no-repeat;
+  background-size: contain;
+	background-position-x: center;
+}
+
+.delete {
+	padding: 10px 15px;
+	background-color: red;
+}
+.restore {
+	background-color: #61c400;
+}
+
+.completed {
+    background-color: #61c400;
+}
+.deletedTask {
+	background-color: red;
+}
+
+.deletedTask > .text {
+	color: white;
+}
+
+.completed > .text {
+    color: white;
+}
+
+button:hover{
+	scale: 1.05;
+}
+
+button:active{
+	transform: translateY(1px);
+	scale: none;
+}
+
+.sort {
+	display: flex;
+	justify-content: flex-start;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	background-color: blue;
+	color: white;
+	margin-left: 6px;
+}
